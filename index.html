@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TutoPar · Prototipo</title>
+<meta name="description" content="Prototipo navegable de TutoPar, plataforma de tutorías entre estudiantes universitarios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+  <aside class="guide">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="6" width="22" height="28" rx="6" fill="var(--ink)"/><rect x="16" y="6" width="22" height="28" rx="6" fill="var(--sun)" opacity=".92"/><path d="M12 15h16M20 15v12" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/></svg>
+      TutoPar
+    </div>
+    <p class="lead">Prototipo navegable de la plataforma de tutorías entre estudiantes. Toca la pantalla del teléfono o salta a cualquier paso del recorrido.</p>
+    <ol class="flow" id="flow"></ol>
+    <p class="note">Prototipo de baja-media fidelidad para el Parcial Final de Emprendimiento y Responsabilidad Social (UPB). Los tutores, precios y reseñas son datos de ejemplo. La tarifa de servicio del 10% es un supuesto que se definirá con la validación.</p>
+  </aside>
+
+  <div class="phone">
+    <div class="screen">
+      <div class="status"><span>9:41</span><span>TutoPar</span><span>100%</span></div>
+      <main class="view" id="view" tabindex="-1"></main>
+      <nav class="tabbar" id="tabbar" aria-label="Navegación principal"></nav>
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
